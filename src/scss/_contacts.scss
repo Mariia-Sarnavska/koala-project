@@ -1,0 +1,41 @@
+.contacts__subtitle {
+    font-size: 12px;
+    line-height: 130%;
+}
+
+.contacts__info-links {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+    font-family: $font-muller;
+    margin: 5px 0;
+    display: block;
+}
+
+.contacts__socials-wrapper {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts__socialls-links {
+    border-radius: 50%;
+    display: block;
+
+    &:hover {
+        transform: scale(1.25);
+    }
+
+    &:not(:last-child) {
+        margin-right: 20px;
+
+        @media (max-width: 739px) {
+            margin-right: 25px;
+        }
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,21 @@
+$color-black: #131612;
+$color-white: #ffffff;
+$color-grey: #F3F3F3;
+$color-grey-dark: #A7AEA4;
+$color-red: #FB1010;
+
+$border-radius-base: 30px;
+$transition-base: 0.5s;
+$font-muller: 'Muller', sans-serif;
+
+%arrow-after {
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-size: 12px;
+        background-image: url("../images/button-arrow.svg");
+        margin-left: 10px;
+    }
+}

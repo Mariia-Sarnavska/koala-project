@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kika</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+    <div id="cursor">
+        <div>
+            <span class="default"></span>
+            <span class="text">Дiзнатися</span>
+        </div>
+    </div>
+
+    @@include('_header.html')
+
+    <main>
+        <section class="main-screen">
+            <div class="row default">
+                <div class="main-screen__image">
+                    <img src="images/circles-logo-deco-works.png" alt="main-img-circles">
+                </div>
+                <div class="main-screen__content">
+                    <div class="main-screen__title">
+                        <span>Дизайн, </span>
+                        <span>айдентика</span>
+                        <span>та сайти <span>пiд ключ</span></span>
+                    </div>
+                    <div class="main-screen__text">
+                        <p>
+                            Додамо вашому бiзнесу чи особистому бренду яскравi переваги. Надамо комплекснi послуги з веб-розробки — вiд iдей до запуску
+                        </p>
+                        <a href="#" class="button-simple">Давайте обговоримо ваш проект</a>
+                    </div>
+                    <span class="main-screen__decor-line"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="services black">
+            <div class="row default">
+                <div class="services__title">
+                    <h2>Нашi послуги</h2>
+                </div>
+                <div class="services__body">
+                    <div class="services__items">
+                        <a href="#" class="services__link">
+                            <div class="services__title"><h3>Дизайн</h3></div>
+                            <div class="services__description">
+                                <div class="services__eye">
+                                    <span></span>
+                                </div>
+                                <div class="services__text">
+                                    <p>Створимо макети за вашими побажаннями i заточимо під сучаснi вимоги пошукових систем та аудиторiй</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__items">
+                        <a href="#" class="services__link">
+                            <div class="services__title"><h3>Розробка</h3></div>
+                            <div class="services__description">
+                                <div class="services__eye">
+                                    <span></span>
+                                </div>
+                                <div class="services__text">
+                                    <p>Втiлимо роботи з верстки та кросбраузерної адаптацiї сайту, щоб ваш ресурс коректно вiдображався на всiх пристроях. Налагодимо функцiонал, CMS та безпеку.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__items">
+                        <a href="#" class="services__link">
+                            <div class="services__title"><h3>Оптимiзацiя</h3></div>
+                            <div class="services__description">
+                                <div class="services__eye">
+                                    <span></span>
+                                </div>
+                                <div class="services__text">
+                                    <p>Максимально прискоримо роботу сайту та пiдвищимо показники обробки даних — забезпечимо комфорт користувачам та вiдмiнну базу для просування.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__items">
+                        <a href="#" class="services__link">
+                            <div class="services__title"><h3>Наповнення</h3></div>
+                            <div class="services__description">
+                                <div class="services__eye">
+                                    <span></span>
+                                </div>
+                                <div class="services__text">
+                                    <p>Наповнимо сторiнки сайту вашим контентом або створимо потрiбнi данi для наповнення.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__items">
+                        <a href="#" class="services__link">
+                            <div class="services__title"><h3>Супровiд</h3></div>
+                            <div class="services__description">
+                                <div class="services__eye">
+                                    <span></span>
+                                </div>
+                                <div class="services__text">
+                                    <p>Гарантія регулярних доробок та покращення сайту — в дизайнi, функцiоналi, структурi. Реалiзацiя завдання SEO-фахiвцiв або змiна сайту у вiдповiдностi з оперативними завданнями.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>   
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="row default">
+                <div class="clients__title">
+                    <h2>Ми раді бути частиною вашого успіху</h2>
+                </div>
+            </div>
+            <div class="clients__image">
+                <img src="images/clients.png" alt="clients">
+            </div>
+        </section>
+
+        <section class="form-contacts">
+            <div class="row default">
+                <div class="form-contacts__title">
+                    <h2>Подiлiться вашими iдеями</h2>
+                </div>
+                <div class="form-contacts__content">
+                    <div class="form-contacts__column">
+                        <p class="form-contacts__text">Ми iз задоволенням втiлимо!</p>
+                        <p class="form-contacts__text-small">Зв'яжiться з нами або заповнiть форму, i ми вам подзвонимо протягом 20 хвилин.</p>
+                        <form action class="form-contacts__form">
+                            <div class="form-contacts__input-wrapper">
+                                <input type="text" name="name" id="name" placeholder="Ваше iм'я">
+                            </div>
+                            <div class="form-contacts__input-wrapper">
+                                <input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+                            </div>
+                            <div class="form-contacts__input-wrapper">
+                                <div class="submit-wrapper">
+                                    <input type="submit" value="Відправити" >
+                                </div>
+                                <p class="form-contacts__agree-text">Натискаючи цю кнопку, я погоджуюсь на обробку персональних даних</p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-contacts__column">
+                        @@include('_contacts.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @@include('_footer.html')
+
+    <script src="./js/main.min.js"></script>
+</body>
+</html>

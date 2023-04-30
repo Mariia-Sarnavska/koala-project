@@ -1,0 +1,135 @@
+.footer {
+    section {
+        padding: 100px 0;
+
+        @media (max-width: 739px) {
+            padding: 50px 0 20px;
+        }
+    }   
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.footer__columns {
+    flex: 1;
+
+    @media (max-width: 739px) {
+        flex: unset;
+        width: 100%;
+
+        &:last-child {
+            order: -1;
+        }
+    }
+
+    .contacts {
+        text-align: right;
+
+        @media (max-width: 739px) {
+            text-align: left;
+        }
+    }
+
+    .contacts__socials {
+        .contacts__socials-wrapper {
+            justify-content: flex-end;
+
+            @media (max-width: 739px) {
+                justify-content: flex-start;
+                margin-bottom: 66px;
+            }
+        }
+
+        .contacts__subtitle {
+            display: none;
+
+            @media (max-width: 739px) {
+                display: block;
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+.footer__copyright {
+    @media (max-width: 739px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+    }
+}
+
+.footer__top-arrow {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 40px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 226px;
+        height: 226px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(148.87% 133.48% at 49.62% 53.76%, rgba(251, 16, 16, 0.18) 0%, rgba(243, 243, 243, 0) 35%);
+        z-index: -1;
+    }
+
+    @media (max-width: 739px) {
+        margin-bottom: 0;
+
+        &::after {
+            width: 65px;
+            height: 65px;
+            background: radial-gradient(200% 200% at 50% 50%, rgba(251, 16, 16, 0.18) 0%, rgba(243, 243, 243, 0) 25%);
+        }
+    }
+    
+    a {
+        border-radius: 50%;
+        display: block;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+
+            @media (max-width: 739px) {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+    
+}
+
+.footer__policy {
+    a {
+        font-size: 12px;
+        line-height: 130%;
+        font-family: $font-muller;
+        color: $color-grey-dark;
+        border-bottom: 1px solid $color-grey-dark;
+
+        &:hover {
+            border-color: transparent;
+        }
+    }
+}
+
+.footer__copyright-text {
+    margin-top: 10px;
+
+    p {
+        font-size: 12px;
+    }
+}
